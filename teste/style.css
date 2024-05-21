@@ -1,0 +1,80 @@
+  .responsive {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin-left: 0 auto;
+    background-repeat: no-repeat;
+  }
+
+  .responsive2 {
+    width: 100%;
+    height: auto;
+    max-width: 850px;
+    margin-left:  auto;
+    background-repeat: no-repeat;
+  }
+
+  .container{
+    margin-top: 35px;
+  }
+
+  .principal{
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+
+    .img{
+        border-radius: 15px;
+    }
+
+/** Carrosel **/
+
+    .carousel-indicators{
+        position: absolute;
+        
+    }
+  
+    .carousel-control-prev{
+        height: 45px;
+        border-bottom-right-radius: 500px;
+        background-color: rgba(4, 6, 7, 1);
+        background-position: 0px 0px;
+    }
+
+    .carousel-control-next{
+        height: 45px;
+        border-bottom-left-radius: 500px;
+        background-color: rgba(4, 6, 7, 1);
+        background-position: 0px 0px;
+    }
+
+    .carousel-indicators{
+        bottom: -80%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .card-title{
+        font-size: 25px;
+    }
+
+    .container .row img{
+        height: 288px;
+    }
+    
+    .card-body{
+        height: 178px;
+    }
+
+/**Fim do carrosel**/
+
+    #profile-image {
+        max-width: 200px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #main-content {
+        padding: 15px;
+    }
+

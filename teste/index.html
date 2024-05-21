@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal - Livraria</title>
+  
+  <link rel="stylesheet" href="index.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    body {
+      padding-top: 70px; 
+      padding-bottom: 70px;
+    }
+   
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="index.html"><img src="logo2.png" alt="" style="height: 105px; width: 115px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="produtos.html">Produtos <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="carrinho.html">Carrinho <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">Cadastro</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+       
+    <img class="responsive" src="logo.png" alt="">
+      
+  </div>
+
+  <video id="background-video" autoplay loop muted poster="image.png">
+    <source src="csbg.mp4" type="video/mp4">
+    </video>
+
+    <div class="container principal">
+        <div>
+            <h2>Novidades</h2>
+        </div>
+    </div>
+
+<!--Carrosel-->
+    <div id="carouselExampleIndicators" class="carousel slide container responsive2" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://d3a0dcqzwu0eh0.cloudfront.net/images/350_lmbunsgjeks6pgam4rvj.png" class="d-block w-100 img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://d3a0dcqzwu0eh0.cloudfront.net/images/350_lmbunsgjeks6pgam4rvj.png" class="d-block w-100 img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://d3a0dcqzwu0eh0.cloudfront.net/images/350_lmbunsgjeks6pgam4rvj.png" class="d-block w-100 img" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+
+<!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

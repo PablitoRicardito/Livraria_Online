@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-image, .form {
+    width: 50%;
+    padding: 20px;
+}
+
+.form-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-image .content {
+    text-align: center;
+}
+
+.form-image .content h2 {
+    margin-bottom: 10px;
+}
+
+.form-image .content p {
+    margin-bottom: 20px;
+}
+
+.form-image .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-image .btn a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.form-image .btn a:hover {
+    text-decoration: underline;
+}
+
+.form {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-header .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-header .title img {
+    margin-right: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-box {
+    width: 50%;
+    padding: 10px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.gender-inputs {
+    margin: 20px 0;
+}
+
+.gender-inputs .gender-title {
+    margin-bottom: 10px;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender-group .gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-group .gender-input input {
+    margin-right: 5px;
+}
+
+.continue-button {
+    display: flex;
+    justify-content: center;
+}
+
+.continue-button button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    .form-image, .form {
+        width: 90%;
+    }
+
+    .input-box {
+        width: 100%;
+    }
+}
