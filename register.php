@@ -5,15 +5,15 @@ include 'navbar.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtenha os valores do formulário
     $firstname = $_POST['firstname'];
-    $lastname = $_POST['sobrenome'];
+    $lastname = $_POST['lastname'];
     $cpf = $_POST['cpf'];
-    $birthdate = $_POST['data'];
+    $birthdate = $_POST['birthdate'];
     $email = $_POST['email'];
-    $phone = $_POST['number'];
+    $phone = $_POST['phone'];
     $cep = $_POST['cep'];
-    $address = $_POST['endereco'];
-    $neighborhood = $_POST['bairro'];
-    $city = $_POST['cidade'];
+    $address = $_POST['address'];
+    $neighborhood = $_POST['neighborhood'];
+    $city = $_POST['city'];
     $gender = $_POST['gender'];
     $password = $_POST['password'];
 
@@ -185,7 +185,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="password">Senha</label>
                     <input type="password" id="password" name="password" maxlength="8" required>
                 </div>
-                
+
                 <div class="input-box">
                     <label for="confirmPassword">Confirme sua Senha</label>
                     <input id="confirmPassword" type="password" name="confirmPassword" maxlength="8" required>
@@ -196,6 +196,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </form>
         </div>
     </div>
+    <?php include 'footer.php'?>
+</body>
+</html>
+
     <?php include 'footer.php'?>
 </body>
 </html>
