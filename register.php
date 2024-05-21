@@ -157,14 +157,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="city">Cidade</label>
                     <input type="text" id="city" name="city" required>
                 </div>
-                <div class="input-box">
-                    <label for="gender">Gênero</label>
-                    <input type="text" id="gender" name="gender" required>
+
+                <div class="gender-inputs">
+                    
+                <div class="gender-title">Gênero</div>
+                    
+                <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender" value="Feminino" required>
+                            <label for="female">Feminino</label>
+                        </div>
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender" value="Masculino" required>
+                            <label for="male">Masculino</label>
+                        </div>
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender" value="Outros" required>
+                            <label for="others">Outros</label>
+                        </div>
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender" value="Prefiro não dizer" required>
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="input-box">
                     <label for="password">Senha</label>
                     <input type="password" id="password" name="password" maxlength="8" required>
                 </div>
+                
                 <div class="input-box">
                     <label for="confirmPassword">Confirme sua Senha</label>
                     <input id="confirmPassword" type="password" name="confirmPassword" maxlength="8" required>
@@ -178,4 +199,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php include 'footer.php'?>
 </body>
 </html>
-
