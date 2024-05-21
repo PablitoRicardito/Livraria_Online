@@ -42,6 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Erro ao atualizar dados: " . $stmt->error;
     }
     $stmt->close();
+
+    header("Location: usuario.php");
 }
 
 // Logout
@@ -108,9 +110,33 @@ $conn->close();
                     <label for="city">Cidade</label>
                     <input type="text" name="city" value="<?php echo htmlspecialchars($user['city']); ?>" required>
                 </div>
+                
+                    
+                <div class="gender-title">Gênero</div>
+
                 <div class="input-box">
-                    <label for="gender">Gênero</label>
                     <input type="text" name="gender" value="<?php echo htmlspecialchars($user['gender']); ?>" required>
+                </div>
+
+            <div class="gender-inputs">
+                <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender" value="Feminino" required>
+                            <label for="female">Feminino</label>
+                        </div>
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender" value="Masculino" required>
+                            <label for="male">Masculino</label>
+                        </div>
+                        <div class="gender-input">
+                            <input id="others" type="radio" name="gender" value="Outros" required>
+                            <label for="others">Outros</label>
+                        </div>
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender" value="Prefiro não dizer" required>
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="continue-button">
                     <button type="submit">Atualizar Dados</button>
