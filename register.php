@@ -1,6 +1,6 @@
 <?php
 include 'config.php';
-include 'navbar.php';
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtenha os valores do formulário
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/cadastro.css">
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             function applyMask(input, mask) {
@@ -97,7 +97,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </script>
 </head>
 <body>
-    <div class="container">
+
+     <div class="container">
         <div class="form-image">
             <div class="content">            
                 <h2>Já Possui Conta?</h2>        
@@ -105,62 +106,85 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <br>    
                 <button class="btn" id="login"><a href="login.php">Login</a></button>
                 <br><br>
-                <img src="imagem/img.svg" alt="">
+                <img src="CSS/imagem/img.svg" alt="">
             </div>
         </div>
+
         <div class="form">
-            <form method="post" action="register.php">
-                <div class="form-header">                 
+            <form method="post" action="register.php" onsubmit="return validarSenha()">
+
+                <div class="form-header">     
                     <div class="title">
-                        <a href="home.php"><img src="imagem/logo.png" alt="" class="logo"></a> 
+                        <a href="index.php"><img src="CSS/imagem/logo2.png" alt="" class="logo"></a> 
                         <h3>Cadastre-se</h3>                   
-                    </div>                    
+                    </div>                                     
                 </div>
-                <div class="input-group . form">
+
+                <div class="input-group">
                     <div class="input-box">
                     <label for="firstname">Primeiro Nome</label>
-                    <input type="text" id="firstname" name="firstname" required>
+                    <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>            
                 </div>
+
                 <div class="input-box">
                     <label for="lastname">Sobrenome</label>
-                    <input type="text" id="lastname" name="lastname" required>
+                    <input type="text" id="lastname" name="lastname" placeholder="Digite seu sobrenome" required>
                 </div>
+
                 <div class="input-box">
                     <label for="cpf">CPF</label>
-                    <input type="text" id="cpf" name="cpf" required>
+                    <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
                 </div>
+
                 <div class="input-box">
                     <label for="birthdate">Data de Nascimento</label>
                     <input type="date" id="birthdate" name="birthdate" required>
                 </div>
+
                 <div class="input-box">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
                 </div>
+
                 <div class="input-box">
                     <label for="phone">Celular</label>
-                    <input type="text" id="phone" name="phone" required>
+                    <input type="text" id="phone" name="phone" placeholder="(xx) xxxx-xxxx" required>
                 </div>
+
                 <div class="input-box">
                     <label for="cep">CEP</label>
-                    <input type="text" id="cep" name="cep" required>
+                    <input type="text" id="cep" name="cep"  placeholder="Digite seu CEP"  required>
                 </div>
                 <div class="input-box">
                     <label for="address">Endereço</label>
-                    <input type="text" id="address" name="address" required>
+                    <input type="text" id="address" name="address" placeholder="Digite nome da rua" required>
                 </div>
                 <div class="input-box">
                     <label for="neighborhood">Bairro</label>
-                    <input type="text" id="neighborhood" name="neighborhood" required>
+                    <input type="text" id="neighborhood" name="neighborhood" placeholder="Digite nome do bairro"  required>
                 </div>
                 <div class="input-box">
                     <label for="city">Cidade</label>
-                    <input type="text" id="city" name="city" required>
+                    <input type="text" id="city" name="city" placeholder="Digite nome da cidade" required>
                 </div>
+
+                <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" maxlength="8" required>
+                </div>
+
+                <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" maxlength="8" required>
+                </div> 
+            </div>   
+
 
                 <div class="gender-inputs">
                     
-                <div class="gender-title">Gênero</div>
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
                     
                 <div class="gender-group">
                         <div class="gender-input">
@@ -179,19 +203,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <input id="none" type="radio" name="gender" value="Prefiro não dizer" required>
                             <label for="none">Prefiro não dizer</label>
                         </div>
-                    </div>
-                </div>
-                <div class="input-box">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" name="password" maxlength="8" required>
-                </div>
-
-                <div class="input-box">
-                    <label for="confirmPassword">Confirme sua Senha</label>
-                    <input id="confirmPassword" type="password" name="confirmPassword" maxlength="8" required>
                     </div>           
+               
+
                 <div class="continue-button">
-                    <button type="submit">Registrar</button>
+                    <button type="submit">Continuar</button>
                 </div>
             </form>
         </div>
