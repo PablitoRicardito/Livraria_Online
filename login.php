@@ -45,28 +45,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/login.css">
     <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <?php include 'navbar.php'; ?>
-    <div class="container">
+    
+<div class="container">
+         <div>
+            <a href="index.php"><img src="CSS/imagem/logo2.png" alt=""></a>
+        </div>
+
         <div class="form">
             <form method="POST">
-                <h2>Login</h2>
-                <div class="input-box">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" required>
-                </div>
-                <div class="input-box">
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" required>
-                </div>
-                <div class="continue-button">
-                    <button type="submit">Login</button>
-                </div>
+            <h3>Bem-vindo(a) de volta à Folster</h3>
+            <p>Expanda seus conhecimentos</p>
+
+            <div class="input-box">
+            <input type="text" placeholder="E-mail"autofocus>
+            <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+            <input type="password" placeholder="Senha"required>
+            <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <div class="remember-forgot">
+            <label> <input type="checkbox"> Lembrar senha</label>
+            <a href="#"> Esqueceu senha? </a>        
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+            <br>
+            <p> Não possui conta? <a href="register.php"> Cadastrar Aqui</a></p>
+            </div>
+
+
+
+               
             </form>
         </div>
     </div>
