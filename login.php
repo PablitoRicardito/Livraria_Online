@@ -64,12 +64,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p>Expanda seus conhecimentos</p>
 
             <div class="input-box">
-            <input type="text" placeholder="E-mail"autofocus>
+            <input type="text" name="email" placeholder="E-mail" autofocus required>
             <i class='bx bxs-user'></i>
             </div>
 
             <div class="input-box">
-            <input type="password" placeholder="Senha"required>
+            <input type="password" name="password" placeholder="Senha"required>
             <i class='bx bxs-lock-alt' ></i>
             </div>
 
