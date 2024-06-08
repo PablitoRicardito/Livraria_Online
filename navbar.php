@@ -13,7 +13,7 @@
     <a href="search.php">Pesquisa Avançada</a>
     <a href="carrinho.php">Carrinho</a>
     <a href="register.php">Cadastro</a>
-    <a href="login.php">Login</a>
+    <a href="login.php">Entrar</a>
     <a href="admin_login.php">Admin</a>
 </nav>
 <div class="container">
